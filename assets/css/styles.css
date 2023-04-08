@@ -1,0 +1,221 @@
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    --number-color: hsl(230, 100%, 80%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.result{
+    background: linear-gradient(#7857ff,#2e2be9);
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    padding: 1rem 2.5rem 2rem 2.5rem;
+}
+
+.result__title{
+    color: var(--Light-lavender);
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.result__numbers{
+    width: 8.5rem;
+    height: 8.5rem;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 1.3rem;
+}
+
+.result__number{
+    color: var(--White);
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.result__second__number{
+    color: var(--Light-lavender);
+}
+
+.result__great{
+    color: var(--Pale-blue);
+    font-family: 700;
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
+}
+
+.result__paragraph{
+    color: var(--Light-lavender);
+}
+
+.summary{
+    padding: 1.5rem;
+}
+
+.summary__title{
+    font-size: 1.3rem;
+    color: var(--Dark-gray-blue);
+    margin-bottom: 1rem;
+}
+
+.summary__content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.summary__stadistics{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+}
+
+.summary__stadistics--1{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.summary__stadistics--2{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.summary__stadistics--3{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.summary__stadistics--4{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.summary__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary__type--1{
+    color: var(--Light-red);
+}
+.summary__type--2{
+    color: var(--Orangey-yellow);
+}
+.summary__type--3{
+    color: var(--Green-teal);
+}
+.summary__type--4{
+    color: var(--Cobalt-blue);
+}
+
+.summary__bottom{
+    text-align: center;
+}
+
+.summary__numbers{
+    color: gray;
+}
+
+.number__color{
+    color: var(--Dark-gray-blue);
+    font-weight: 800;
+}
+
+.summary__cta{
+    display: block;
+    color: var(--White);
+    text-decoration: none;
+    background-color: var(--Dark-gray-blue);
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: .5rem;
+}
+
+
+@media (min-width:719px){
+    body{
+        background-color: var(--Pale-blue);
+    }
+    .container{
+        height: 100vh;
+    }
+    .card{
+        flex-direction: row;
+        width: 750px;
+        background-color: var(--White);
+    }
+    .result{
+        width: 50%;
+        border-radius: 20px 20px 20px 20px;
+        padding: 2rem 3.7rem 3.5rem 3.7rem;
+    }
+    .result__title{
+        margin-bottom: 1.8rem;
+    }
+    .result__numbers{
+        width: 12rem;
+        height: 12rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .result__number{
+        font-size: 4.2rem;
+        font-weight: 800;
+    }
+    .result__second__number{
+        font-size: 1.1rem;
+    }
+    .result__great{
+        margin-bottom: .7rem;
+    }
+    .result__paragraph{
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+    .summary{
+        background-color: var(--White);
+        width: 50%;
+        border-radius: 0 20px 20px 0;
+        padding: 2.2rem;
+    }
+    .summary__stadistics{
+        padding: 1rem;
+    }
+    .summary__cta{
+        margin-top: 1.4rem;
+    }
+}
