@@ -165,6 +165,10 @@ body{
     margin-top: .5rem;
 }
 
+.summary__cta:hover{
+    background: linear-gradient(#7857ff,#2e2be9);
+}
+
 
 @media (min-width:719px){
     body{
